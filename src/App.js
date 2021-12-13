@@ -25,13 +25,10 @@ class App extends Component {
     });
   }
 
-  // console.log(res);
-  //console.log(res.data);
-
   inputHandler = (e) => {
     this.setState({
       inputData: { ...this.state.inputData, [e.target.name]: e.target.value },
-    }); //...this.state.inputData is one is opening where you put setState
+    });
   };
 
   popupHandler = (event) => {
@@ -61,7 +58,7 @@ class App extends Component {
           <Popup {...this.state.inputData} post={this.postHandler} />
         )}
         {this.state.data.map((note) => (
-          <Notes {...note} key={note.id} /> //u r opening the item and sending it
+          <Notes {...note} key={note.id} />
         ))}
       </div>
     );

@@ -25,7 +25,7 @@ const Popup = ({ firstname, lastname, phonenumber, role, message, post }) => {
           <p>
             Role: <span>{role}</span>
           </p>
-          <button onClick={post}>Yes, I am sure</button>
+          <button onClick={post}>Yes, I am sure.</button>
           <button className="secondary" onClick={closeHandler}>
             Nope, don't want to post it
           </button>
