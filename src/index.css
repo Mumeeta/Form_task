@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -40,7 +40,7 @@ button:hover {
 
 .secondary {
   border: #c72166;
-  color: white;
+  color: #fff;
   background: transparent;
 }
 
@@ -50,6 +50,7 @@ form {
   background: rgb(55, 172, 109);
   color: white;
 }
+
 label {
   width: 150px;
   display: inline-block;
@@ -72,6 +73,7 @@ select {
 /***************** VIEW COMPONENT *********************/
 .view {
   padding: 2rem;
+  width: 100%;
 }
 
 .notepad {
@@ -79,7 +81,6 @@ select {
   margin: 1rem 0;
   position: relative;
   box-shadow: 0 0 5px rgb(121, 121, 121);
-  font-family: cursive;
 }
 
 .notepad::before {
@@ -99,7 +100,7 @@ select {
 }
 
 .notepad span {
-  font-family: "Courgette", cursive !important;
+  font-family: "Caveat", cursive;
   font-size: 1.5rem;
   margin-left: 15px;
 }
@@ -131,4 +132,14 @@ select {
 }
 .popup p {
   padding: 1rem 0;
+}
+
+.form_area {
+  display: flex;
+  background: rgb(55, 172, 109);
+}
+
+.Notes {
+  margin-top: 4rem;
+  margin-left: 4rem;
 }

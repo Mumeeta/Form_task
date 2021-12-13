@@ -4,16 +4,6 @@ const Form = (props) => {
   return (
     <form onSubmit={props.submit}>
       <div>
-        <label htmlFor="role">Role</label>
-        <select name="role" id="role" onChange={props.change}>
-          <option value="teacher" selected>
-            Developer
-          </option>
-          <option value="student">Student</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <div>
         <label htmlFor="firstname">First name</label>
         <input
           type="text"
@@ -37,13 +27,23 @@ const Form = (props) => {
         <label htmlFor="phone">Phonenumber</label>
         <input
           type="phone"
-          name="phone"
+          name="phonenumber"
           id="phone"
           required
           onChange={props.change}
         />
       </div>
-
+      <div>
+        <label htmlFor="role">Role</label>
+        <select name="role" id="role" onChange={props.change} required>
+          <option value="" selected>
+            Choose a role
+          </option>
+          <option value="teacher">Teacher</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
       <div>
         <label htmlFor="message">Message</label>
         <textarea
@@ -53,7 +53,6 @@ const Form = (props) => {
           onChange={props.change}
         ></textarea>
       </div>
-
       <input type="submit" value="Send" />
     </form>
   );
